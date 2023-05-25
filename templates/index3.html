@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>神戸市救急搬送件数予測</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="../static/src/main.js"></script>
+    <link href=" ../static/src/style.css" rel="stylesheet">
+    <link href="../static/src/button.css" rel="stylesheet">
+</head>
+<body>
+    <h1>神戸市救急需要可視化ツール<br>(実績分析)</h1>
+    <div class="main">
+
+        <div id="monthan">
+            <!-- <label for="date" id="text_label">分析年:<br>2013～2021</label>
+            <input type="text" id="text_year" name="year"> -->
+            <p>開発段階なので2つ以上チェックボックスにチェックを入れないでください<br>
+            <input type="checkbox" name="ward" id="東灘区" >東灘区
+            <input type="checkbox" name="ward" id="灘区" >灘区
+            <input type="checkbox" name="ward" id="兵庫区" >兵庫区
+            <input type="checkbox" name="ward" id="中央区" >中央区
+            <input type="checkbox" name="ward" id="北区" >北区<br>
+            <input type="checkbox" name="ward" id="長田区" >長田区
+            <input type="checkbox" name="ward" id="須磨区" >須磨区
+            <input type="checkbox" name="ward" id="垂水区" >垂水区
+            <input type="checkbox" name="ward" id="西区" >西区
+            <br>
+
+            </select>
+            
+            <button class="custom-btn btn-16" id="chart_button" onclick="drowChartresult();"><span>描画</span></button>
+            <button class="custom-btn btn-3" id="chart_button" onclick="predictmonthPage();"><span>月別に分析</span></button>
+            <button class="custom-btn btn-7" id="chart_button" onclick="predictyearPage();"><span>年別に分析</span></button>
+        </div>
+
+    </div>
+   
+    <body style="background-color: #EFEFEF;">
+        <img src="../static/img/img.gif" id="loading">
+    </body>
+
+     <div style="position: relative; width: 70vw;" id="canvaschart">    
+        <canvas id="myChart"></canvas>
+    </div>
+
+</body>
+

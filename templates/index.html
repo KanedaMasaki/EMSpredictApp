@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>神戸市救急搬送件数予測</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="../static/src/main.js"></script>
+    <link href=" ../static/src/style.css" rel="stylesheet">
+    <link href="../static/src/button.css" rel="stylesheet">
+</head>
+<body>
+    <h1>神戸市救急需要可視化ツール<br>(月別分析)</h1>
+    <div class="main">
+
+        <div id="monthan">
+            <label for="date" id="text_label">予測年:<br>2025～2065</label>
+            <input type="text" id="text_year" name="year">
+            <label for="date">行政区:</label>
+            <select name="example" id="text_mward" name="ward">
+            <option>東灘区</option>
+            <option>灘区</option>
+            <option>中央区</option>
+            <option>兵庫区</option>
+            <option>北区</option>
+            <option>長田区</option>
+            <option>須磨区</option>
+            <option>垂水区</option>
+            <option>西区</option>
+            </select>
+            
+            <button class="custom-btn btn-16" id="chart_button" onclick="drowChartmonth();"><span>描画</span></button>
+            <button class="custom-btn btn-5" id="chart_button" onclick="resultPage();"><span>実績を分析</span></button>
+            <button class="custom-btn btn-7" id="chart_button" onclick="predictyearPage();"><span>年別に分析</span></button>
+        </div>
+
+    </div>
+   
+    <body style="background-color: #EFEFEF;">
+        <img src="../static/img/img.gif" id="loading">
+
+    </body>
+
+     <div style="position: relative; width: 70vw;" id="canvaschart">    
+        <canvas id="myChart"></canvas>
+    </div>
+
+</body>
+
