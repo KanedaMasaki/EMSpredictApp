@@ -14,31 +14,26 @@
   - 神戸市消防局救急ビッグデータを使用
 
 
+
+
 ## Pages
 - 月別分析
-
-![image](https://github.com/Konippi/biprogy_hackathon/assets/86059523/8c7a3a93-151e-45d9-9ef9-d4481eaa9ca7)
+  - 予測年と行政区を指定すると該当行政区、予測年の1年間の救急搬送件数の詳細を得られます
+  - 予測結果は最大、最小予測搬送件数で表現しています
+![月別分析](https://github.com/KanedaMasaki/EMSpredictApp/assets/133667748/90e4bc70-8340-4cc5-8ec6-ee0eda887f45)
 
 <br>
 
 - 年別分析
-  
-![image](https://github.com/Konippi/biprogy_hackathon/assets/86059523/af0dc3b0-60d5-4be2-86b9-23c152563942)
+  - 行政区を指定すると該当行政区の2065年までの年間搬送件数予測を得られます
+  - 予測結果は最大、最小予測搬送件数で表現しています
+![年別分析](https://github.com/KanedaMasaki/EMSpredictApp/assets/133667748/e2c4adac-d074-4d77-b51d-1f15e672b087)
 
 <br>
 
 - 実績分析
-
-![image](https://github.com/Konippi/biprogy_hackathon/assets/86059523/74f139bc-5d8d-4df7-86bf-e7c551971f1e)
-
-<br>
-
-- Coupon Details Page
-
-![image](https://github.com/Konippi/biprogy_hackathon/assets/86059523/2c7ab384-384f-4ff5-a1d2-37fdf2108c2d)
+  - チェックボックス方式で複数の行政区を選択するとそれぞれの行政区の2013年からの年間搬送件数推移が得られ比較が行えます
+![実績分析](https://github.com/KanedaMasaki/EMSpredictApp/assets/133667748/b8bd0a00-a444-43cf-995c-955ab7df5803)
 
 <br>
 
-- Posting Coupon Page
-
-![image](https://github.com/Konippi/biprogy_hackathon/assets/86059523/666dbefa-7be8-42a0-8044-8f2fc8b0900c)
